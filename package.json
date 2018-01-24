@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "hyperapp": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-hyperapp": "^2.3.0",
+    "parcel-bundler": "^1.5.0"
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coord-e/coord-e.github.io.git"
+  },
+  "author": "coord.e",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coord-e/coord-e.github.io/issues"
+  },
+  "homepage": "https://github.com/coord-e/coord-e.github.io#readme",
+  "description": ""
+}
