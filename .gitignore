@@ -95,4 +95,8 @@ Session.vim
 # Auto-generated tag files
 tags
 
+# parcel cache files
+.cache
 
+# parcel dist directory
+dist
