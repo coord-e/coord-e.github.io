@@ -1,5 +1,7 @@
 import { h, app } from "hyperapp"
 
+import styles from "../css/style.css"
+
 const state = {
   count: 0
 }
@@ -11,7 +13,7 @@ const actions = {
 
 const view = (state, actions) => (
   <main>
-    <h1>{state.count}</h1>
+    <h1 class={styles.title}>{state.count}</h1>
     <button onclick={actions.down}>-</button>
     <button onclick={actions.up}>+</button>
   </main>

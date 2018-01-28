@@ -6,7 +6,9 @@
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-hyperapp": "^2.3.0",
-    "parcel-bundler": "^1.5.0"
+    "parcel-bundler": "^1.5.0",
+    "postcss": "^6.0.16",
+    "postcss-modules": "^1.1.0"
   },
   "name": "portfolio",
   "version": "1.0.0",
