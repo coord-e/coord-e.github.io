@@ -9,6 +9,29 @@ const About = () => <h2>About</h2>
 const Works = () => <h2>Works</h2>
 const Contact = () => <h2>Contact</h2>
 
+const views = [
+  {
+    path:"/",
+    display: "coord.e",
+    view: Home
+  },
+  {
+    path:"/about",
+    display: "about me",
+    view: About
+  },
+  {
+    path:"/works",
+    display: "my works",
+    view: Works
+  },
+  {
+    path:"/contact",
+    display: "contact",
+    view: Contact
+  }
+];
+
 const state = {
   location: location.state
 }
@@ -22,26 +45,22 @@ const view = (state, actions) => (
     <header>
       <nav>
         <ul class={navigationStyles.container}>
-          <li class={navigationStyles.item}>
-            <Link class={navigationStyles.link} to="/">coord.e</Link>
-          </li>
-          <li class={navigationStyles.item}>
-            <Link class={navigationStyles.link} to="/about">about me</Link>
-          </li>
-          <li class={navigationStyles.item}>
-            <Link class={navigationStyles.link} to="/works">my works</Link>
-          </li>
-          <li class={navigationStyles.item}>
-            <Link class={navigationStyles.link} to="/contact">contact</Link>
-          </li>
+          {
+            views.map(view =>
+              <li class={navigationStyles.item}>
+                <Link class={navigationStyles.link} to={view.path}>{view.display}</Link>
+              </li>
+            )
+          }
         </ul>
       </nav>
     </header>
     <main>
-      <Route path="/" render={Home} />
-      <Route path="/about" render={About} />
-      <Route path="/works" render={Works} />
-      <Route path="/contact" render={Contact} />
+      {
+        views.map(view =>
+          <Route path={view.path} render={view.view} />
+        )
+      }
     </main>
   </div>
 )
