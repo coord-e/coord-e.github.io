@@ -2,6 +2,7 @@ import { h, app } from "hyperapp"
 import { Link, Route, location } from "@hyperapp/router"
 
 import styles from "../css/style.css"
+import navigationStyles from "../css/navigation.css"
 
 const Home = () => <h2>Home</h2>
 const About = () => <h2>About</h2>
@@ -20,18 +21,18 @@ const view = (state, actions) => (
   <div>
     <header>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">coord.e</Link>
+        <ul class={navigationStyles.container}>
+          <li class={navigationStyles.item}>
+            <Link class={navigationStyles.link} to="/">coord.e</Link>
           </li>
-          <li>
-            <Link to="/about">about me</Link>
+          <li class={navigationStyles.item}>
+            <Link class={navigationStyles.link} to="/about">about me</Link>
           </li>
-          <li>
-            <Link to="/works">my works</Link>
+          <li class={navigationStyles.item}>
+            <Link class={navigationStyles.link} to="/works">my works</Link>
           </li>
-          <li>
-            <Link to="/contact">contact</Link>
+          <li class={navigationStyles.item}>
+            <Link class={navigationStyles.link} to="/contact">contact</Link>
           </li>
         </ul>
       </nav>
