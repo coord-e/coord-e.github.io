@@ -1,22 +1,50 @@
 import { h, app } from "hyperapp"
+import { Link, Route, location } from "@hyperapp/router"
 
 import styles from "../css/style.css"
 
+const Home = () => <h2>Home</h2>
+const About = () => <h2>About</h2>
+const Works = () => <h2>Works</h2>
+const Contact = () => <h2>Contact</h2>
+
 const state = {
-  count: 0
+  location: location.state
 }
 
 const actions = {
-  down: () => state => ({ count: state.count - 1 }),
-  up: () => state => ({ count: state.count + 1 })
+  location: location.actions
 }
 
 const view = (state, actions) => (
-  <main>
-    <h1 class={styles.title}>{state.count}</h1>
-    <button onclick={actions.down}>-</button>
-    <button onclick={actions.up}>+</button>
-  </main>
+  <div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">coord.e</Link>
+          </li>
+          <li>
+            <Link to="/about">about me</Link>
+          </li>
+          <li>
+            <Link to="/works">my works</Link>
+          </li>
+          <li>
+            <Link to="/contact">contact</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <Route path="/" render={Home} />
+      <Route path="/about" render={About} />
+      <Route path="/works" render={Works} />
+      <Route path="/contact" render={Contact} />
+    </main>
+  </div>
 )
 
 const main = app(state, actions, view, document.body)
+
+const unsubscribe = location.subscribe(main.location)
