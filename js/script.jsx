@@ -13,10 +13,10 @@ import bg4 from "../images/bg4.jpg"
 
 const backgroundImages = [bg0, bg1, bg2, bg3, bg4]
 
-const Home = () => <h2>Home</h2>
-const About = () => <h2>About</h2>
-const Works = () => <h2>Works</h2>
-const Contact = () => <h2>Contact</h2>
+const Home = () => <h2 class={styles.heading}>Home</h2>
+const About = () => <h2 class={styles.heading}>About</h2>
+const Works = () => <h2 class={styles.heading}>Works</h2>
+const Contact = () => <h2 class={styles.heading}>Contact</h2>
 
 const views = [
   {
