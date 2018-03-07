@@ -3,6 +3,10 @@ import { polyfill } from "smoothscroll-polyfill"
 
 polyfill()
 
+// createMatch(), trimTrailingSlash(), and parseRoute() are from hyperapp/router
+// Copyright © 2017-present Jorge Bucaran
+// Licensed under MIT License.
+
 function createMatch(isExact, path, url, params) {
   return {
     isExact: isExact,
