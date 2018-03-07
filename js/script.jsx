@@ -5,6 +5,14 @@ import { location } from "@hyperapp/router"
 import styles from "../css/style.css"
 import navigationStyles from "../css/navigation.css"
 
+import bg0 from "../images/bg0.jpg"
+import bg1 from "../images/bg1.jpg"
+import bg2 from "../images/bg2.jpg"
+import bg3 from "../images/bg3.jpg"
+import bg4 from "../images/bg4.jpg"
+
+const backgroundImages = [bg0, bg1, bg2, bg3, bg4]
+
 const Home = () => <h2>Home</h2>
 const About = () => <h2>About</h2>
 const Works = () => <h2>Works</h2>
@@ -40,6 +48,10 @@ const state = {
 const actions = {
   location: location.actions
 }
+
+document.body.style.backgroundImage = `url(${backgroundImages[Math.floor(Math.random() * 5)]})`
+document.body.style.backgroundSize = 'cover'
+document.body.style.backgroundAttachment = 'fixed'
 
 const view = (state, actions) => (
   <div>
