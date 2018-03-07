@@ -1,5 +1,6 @@
 import { h, app } from "hyperapp"
-import { Link, Route, location } from "@hyperapp/router"
+import { Link, Route } from "./scroll"
+import { location } from "@hyperapp/router"
 
 import styles from "../css/style.css"
 import navigationStyles from "../css/navigation.css"
