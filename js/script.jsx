@@ -1,3 +1,5 @@
+import cx from "classnames"
+
 import { h, app } from "hyperapp"
 import { Link, Route } from "./scroll"
 import { location } from "@hyperapp/router"
@@ -59,9 +61,13 @@ const view = (state, actions) => (
       <nav>
         <ul class={navigationStyles.container}>
           {
+            /* parseRoute() is better to compare pathname and view.path but simple comparison(===) works as well */
             views.map(view =>
               <li class={navigationStyles.item}>
-                <Link class={navigationStyles.link} to={view.path}>{view.display}</Link>
+                <Link class={cx(navigationStyles.link, {[`${navigationStyles.here}`]: state.location.pathname === view.path})}
+                      to={view.path}>
+                  {view.display}
+                </Link>
               </li>
             )
           }

@@ -23,4 +23,22 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2rem;
   font-weight: 300;
+
+  position: relative;
 }
+
+.link::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: .3s;
+}
+
+.here::after,.link:hover::after{
+  width: 100%;
+}
+
