@@ -12,8 +12,9 @@ import bg1 from "../images/bg1.jpg"
 import bg2 from "../images/bg2.jpg"
 import bg3 from "../images/bg3.jpg"
 import bg4 from "../images/bg4.jpg"
+import bg5 from "../images/bg5.png"
 
-const backgroundImages = [bg0, bg1, bg2, bg3, bg4]
+const backgroundImages = [bg0, bg1, bg2, bg3, bg4, bg5]
 
 const Home = () => <h2 class={styles.heading}>Home</h2>
 const About = () => <h2 class={styles.heading}>About</h2>
@@ -51,7 +52,7 @@ const actions = {
   location: location.actions
 }
 
-document.body.style.backgroundImage = `url(${backgroundImages[Math.floor(Math.random() * 5)]})`
+document.body.style.backgroundImage = `url(${backgroundImages[Math.floor(Math.random() * backgroundImages.length)]})`
 document.body.style.backgroundSize = 'cover'
 document.body.style.backgroundAttachment = 'fixed'
 
