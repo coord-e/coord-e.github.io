@@ -6,6 +6,7 @@ import { location } from "@hyperapp/router"
 
 import styles from "../css/style.css"
 import navigationStyles from "../css/navigation.css"
+import topStyles from "../css/top.css"
 
 import bg0 from "../images/bg0.jpg"
 import bg1 from "../images/bg1.jpg"
@@ -16,7 +17,13 @@ import bg5 from "../images/bg5.png"
 
 const backgroundImages = [bg0, bg1, bg2, bg3, bg4, bg5]
 
-const Home = () => <h2 class={styles.heading}>Home</h2>
+const Home = () => (
+  <div class={topStyles.container}>
+    <h2 class={topStyles.heading}>Hiromi Ogawa / coord.e</h2>
+    <h4 class={topStyles.description}>Software, Web, and Embedded System Developer</h4>
+  </div>
+)
+
 const About = () => <h2 class={styles.heading}>About</h2>
 const Works = () => <h2 class={styles.heading}>Works</h2>
 const Contact = () => <h2 class={styles.heading}>Contact</h2>

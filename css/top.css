@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  height: 75vh;
+  padding-top: 25vh;
+}
+
+.heading {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.description {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
