@@ -3,6 +3,8 @@ import { polyfill } from "smoothscroll-polyfill"
 
 polyfill()
 
+let clicked = false
+
 // createMatch(), trimTrailingSlash(), and parseRoute() are from hyperapp/router
 // Copyright © 2017-present Jorge Bucaran
 // Licensed under MIT License.
@@ -69,6 +71,7 @@ export function Link(props, children) {
       e.preventDefault()
 
       if (to !== location.pathname) {
+        clicked = true
         history.pushState(location.pathname, "", to)
       }
     }
@@ -87,10 +90,35 @@ export function Route(props){
       location: location
   })
 
+  const handleEvent = (e) => (event) => {
+    if(window.pageYOffset + window.innerHeight >= e.offsetTop &&
+       window.pageYOffset + window.innerHeight <= e.offsetTop + e.offsetHeight){
+      if(!clicked && location.pathname !== props.path){
+        console.log("rep")
+        history.replaceState(location.pathname, "", props.path)
+      }
+    }
+  }
+
+  element.attributes.oncreate = (e) => {
+    window.addEventListener('scroll', handleEvent(e))
+  }
+  element.attributes.ondestroy = (e) => {
+    window.removeEventListener('scroll', handleEvent(e))
+  }
+
   if(match){
     const scroll = (e) => e.scrollIntoView({behavior: 'smooth', block:'start'})
-    element.attributes.oncreate = scroll
-    element.attributes.onupdate = scroll
+    element.attributes.oncreate = (e) => {
+      scroll(e)
+      window.addEventListener('scroll', handleEvent(e))
+    }
+    element.attributes.onupdate = (e) => {
+      if(clicked) {
+        scroll(e)
+        clicked = false
+      }
+    }
   }
 
   return element
