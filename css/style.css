@@ -1,12 +1,30 @@
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2:before {
+  content: "# ";
+  color: #b2bec3;
+}
+
+h3:before {
+  content: "## ";
+  color: #b2bec3;
+}
+
 .container {
   height: 100vh;
 }
 
 .heading {
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 4rem;
   font-weight: 400;
+
+  display: inline-block;
 }
 
 .content {
