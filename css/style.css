@@ -8,3 +8,33 @@
   font-size: 4rem;
   font-weight: 400;
 }
+
+.content {
+  color: #000;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -100%;
+  left: -100%;
+  z-index: -1;
+  transform: rotate(30deg);
+  background-color: white;
+}
+
+.tag {
+  margin: 7px;
+  padding: 5px;
+  background-color: #636e72;
+  color: white;
+}
+
+.tag:hover {
+  background-color: #2d3436;
+}
