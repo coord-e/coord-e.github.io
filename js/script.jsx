@@ -16,6 +16,15 @@ import bg3 from "../images/bg3.jpg"
 import bg4 from "../images/bg4.jpg"
 import bg5 from "../images/bg5.png"
 
+const images = {
+ scopion:  require("../images/works/scopion.png"),
+ validate: require("../images/works/validate.now.png"),
+ cart:     require("../images/works/cart.png"),
+ ozone:    require("../images/works/ozone.png"),
+ ili9328:  require("../images/works/ili9328spi.jpg"),
+ dsp6951:  require("../images/works/dsp6951.jpg")
+}
+
 const backgroundImages = [bg0, bg1, bg2, bg3, bg4, bg5]
 
 const Home = () => (
@@ -66,19 +75,34 @@ const Works = () => (
     <div>
       <ul class={carouselStyles.container}>
         <li class={carouselStyles.item}>
-          <h3>scopion</h3>
-          <img class={carouselStyles.image} src="https://coord-e.com/images/works/scopion.png" />
+          <h3>scopion programming language</h3>
+          <img class={carouselStyles.image} src={images.scopion} />
           <p>a statically-typed functional programming language with powerful objective syntax</p>
         </li>
         <li class={carouselStyles.item}>
-          <h3>scopion</h3>
-          <img class={carouselStyles.image} src="https://coord-e.com/images/works/scopion.png" />
-          <p>a statically-typed functional programming language with powerful objective syntax</p>
+          <h3>cart</h3>
+          <img class={carouselStyles.image} src={images.cart} />
+          <p>Convert c/c++ code into compilable ascii art</p>
         </li>
         <li class={carouselStyles.item}>
-          <h3>scopion</h3>
-          <img class={carouselStyles.image} src="https://coord-e.com/images/works/scopion.png" />
-          <p>a statically-typed functional programming language with powerful objective syntax</p>
+          <h3>validate.now</h3>
+          <img class={carouselStyles.image} src={images.validate} />
+          <p>Simple schema validation app built with hyperapp</p>
+        </li>
+        <li class={carouselStyles.item}>
+          <h3>Ozone Project</h3>
+          <img class={carouselStyles.image} src={images.ozone} />
+          <p>Ozone Project brings more OS to Intel Edison. Currently Debian, CentOS, and Fedora are available.</p>
+        </li>
+        <li class={carouselStyles.item}>
+          <h3>DSP6951 Driver Library for Arduino</h3>
+          <img class={carouselStyles.image} src={images.dsp6951} />
+          <p>Arduino Library for DSP6951 DSP Radio IC.</p>
+        </li>
+        <li class={carouselStyles.item}>
+          <h3>ILI9328 Driver Library for Arduino</h3>
+          <img class={carouselStyles.image} src={images.ili9328} />
+          <p>Library for colored graphics LCD with ILI9328 controller.</p>
         </li>
       </ul>
     </div>
