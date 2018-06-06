@@ -10,12 +10,14 @@ import topStyles from "../css/top.css"
 import carouselStyles from "../css/carousel.css"
 import formStyles from "../css/form.css"
 
-import bg0 from "../images/bg0.jpg"
-import bg1 from "../images/bg1.jpg"
-import bg2 from "../images/bg2.jpg"
-import bg3 from "../images/bg3.jpg"
-import bg4 from "../images/bg4.jpg"
-import bg5 from "../images/bg5.png"
+const backgroundImages = [
+  require("../images/bg0.jpg"),
+  require("../images/bg1.jpg"),
+  require("../images/bg2.jpg"),
+  require("../images/bg3.jpg"),
+  require("../images/bg4.jpg"),
+  require("../images/bg5.png")
+]
 
 const images = {
  scopion:  require("../images/works/scopion.png"),
@@ -25,8 +27,6 @@ const images = {
  ili9328:  require("../images/works/ili9328spi.jpg"),
  dsp6951:  require("../images/works/dsp6951.jpg")
 }
-
-const backgroundImages = [bg0, bg1, bg2, bg3, bg4, bg5]
 
 const Home = () => (
   <div class={cx(styles.container, topStyles.container)}>
