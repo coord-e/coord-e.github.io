@@ -35,6 +35,11 @@
   padding: 5px;
 }
 
+.label:before {
+  content: "## ";
+  color: #b2bec3;
+}
+
 .submit {
   -webkit-appearance: none;
 

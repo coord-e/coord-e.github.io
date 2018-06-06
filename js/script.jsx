@@ -115,9 +115,9 @@ const Contact = () => (
     <h2 class={styles.heading}>Contact</h2>
     <div class={formStyles.container}>
       <form class={formStyles.form}>
-        <label for="email">Email</label>
+        <label for="email" class={formStyles.label}>Email</label>
         <input type="email" name="email" class={formStyles.email} />
-        <label for="message">Message</label>
+        <label for="message" class={formStyles.label}>Message</label>
         <textarea name="message" class={formStyles.message}></textarea>
         <input type="submit" value="送信する" class={formStyles.submit} />
       </form>
