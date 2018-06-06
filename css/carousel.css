@@ -1,13 +1,21 @@
 .container {
   overflow-x: scroll;
-  width: 200vw;
+  width: 95vw;
+
+  margin: 0 auto;
+
+  display: flex;
 }
 
 .item {
   background-color: #fff;
   padding: 10px;
   margin: 10px;
-  width: 30%;
+  width: 50%;
+
+  flex-shrink: 0;
+
+  list-style-type: none;
 }
 
 .image {
