@@ -20,7 +20,7 @@ const backgroundImages = [bg0, bg1, bg2, bg3, bg4, bg5]
 
 const Home = () => (
   <div class={cx(styles.container, topStyles.container)}>
-    <h2 class={topStyles.heading}>Hiromi Ogawa / coord.e</h2>
+    <h1 class={topStyles.heading}>Hiromi Ogawa / coord.e</h1>
     <h4 class={topStyles.description}>Software, Web, and Embedded System Developer</h4>
   </div>
 )
