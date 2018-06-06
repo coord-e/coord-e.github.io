@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-* {
+body, input, textarea {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
