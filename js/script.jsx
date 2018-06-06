@@ -4,6 +4,8 @@ import { h, app } from "hyperapp"
 import { Link, Route } from "./scroll"
 import { location } from "@hyperapp/router"
 
+import { Works } from "./contents"
+
 const styles = {
   style:    require("../css/style.css"),
   nav:      require("../css/navigation.css"),
@@ -68,42 +70,6 @@ const About = () => (
       <span class={styles.style.tag}>Haskell</span>
       <span class={styles.style.tag}>インフラ技術</span>
       <span class={styles.style.tag}>機械学習</span>
-    </div>
-  </div>
-)
-
-const WorkItem = ({title, image}, children) => (
-  <li class={styles.carousel.item}>
-    <h3>{title}</h3>
-    <img class={styles.carousel.image} src={image} />
-    <p>{children}</p>
-  </li>
-)
-
-const Works = () => (
-  <div class={styles.style.container}>
-    <h2 class={styles.style.heading}>Works</h2>
-    <div>
-      <ul class={styles.carousel.container}>
-        <WorkItem title="scopion programming language" image={images.scopion}>
-          a statically-typed functional programming language with powerful objective syntax
-        </WorkItem>
-        <WorkItem title="cart" image={images.cart}>
-          Convert c/c++ code into compilable ascii art
-        </WorkItem>
-        <WorkItem title="validate.now" image={images.validate}>
-          Simple schema validation app built with hyperapp
-        </WorkItem>
-        <WorkItem title="Ozone Project" image={images.ozone}>
-          Ozone Project brings more OS to Intel Edison. Currently Debian, CentOS, and Fedora are available
-        </WorkItem>
-        <WorkItem title="DSP6951 Driver Library for Arduino" image={images.dsp6951}>
-          Arduino Library for DSP6951 DSP Radio IC.
-        </WorkItem>
-        <WorkItem title="ILI9328 Driver Library for Arduino" image={images.ili9328}>
-          Library for colored graphics LCD with ILI9328 controller.
-        </WorkItem>
-      </ul>
     </div>
   </div>
 )
