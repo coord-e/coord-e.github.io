@@ -8,6 +8,7 @@ import styles from "../css/style.css"
 import navigationStyles from "../css/navigation.css"
 import topStyles from "../css/top.css"
 import carouselStyles from "../css/carousel.css"
+import formStyles from "../css/form.css"
 
 import bg0 from "../images/bg0.jpg"
 import bg1 from "../images/bg1.jpg"
@@ -112,7 +113,14 @@ const Works = () => (
 const Contact = () => (
   <div class={styles.container}>
     <h2 class={styles.heading}>Contact</h2>
-    <div class={styles.content}>
+    <div class={formStyles.container}>
+      <form class={formStyles.form}>
+        <label for="email">Email</label>
+        <input type="email" name="email" class={formStyles.email} />
+        <label for="message">Message</label>
+        <textarea name="message" class={formStyles.message}></textarea>
+        <input type="submit" value="送信する" class={formStyles.submit} />
+      </form>
     </div>
   </div>
 )

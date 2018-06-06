@@ -1,0 +1,39 @@
+.container {
+  overflow-y: hidden;
+}
+
+.form {
+  background-color: #fff;
+
+  width: 70%;
+  height: 60vh;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 2em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.email {
+  margin: 20px;
+  height: 10%;
+}
+
+.message {
+  -webkit-appearance: none;
+
+  margin: 20px;
+  height: 70%;
+
+  resize: none;
+}
+
+.submit {
+  -webkit-appearance: none;
+
+  margin: 20px auto;
+  height: 10%;
+  width: 60%;
+}
