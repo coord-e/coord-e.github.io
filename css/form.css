@@ -1,0 +1,51 @@
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form {
+  background-color: #fff;
+
+  height: 60vh;
+  padding: 30px;
+  font-size: 2em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.email {
+  margin: 20px;
+  height: 10%;
+
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+.message {
+  -webkit-appearance: none;
+
+  margin: 20px;
+  height: 70%;
+
+  resize: none;
+
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+.label:before {
+  content: "## ";
+  color: #b2bec3;
+}
+
+.submit {
+  -webkit-appearance: none;
+
+  margin: 20px auto;
+  height: 10%;
+  width: 60%;
+
+  font-size: 0.6em;
+}
