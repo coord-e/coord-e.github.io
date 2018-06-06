@@ -7,6 +7,7 @@ import { location } from "@hyperapp/router"
 import styles from "../css/style.css"
 import navigationStyles from "../css/navigation.css"
 import topStyles from "../css/top.css"
+import carouselStyles from "../css/carousel.css"
 
 import bg0 from "../images/bg0.jpg"
 import bg1 from "../images/bg1.jpg"
@@ -62,7 +63,24 @@ const About = () => (
 const Works = () => (
   <div class={styles.container}>
     <h2 class={styles.heading}>Works</h2>
-    <div class={styles.content}>
+    <div>
+      <ul class={carouselStyles.container}>
+        <li class={carouselStyles.item}>
+          <h3>scopion</h3>
+          <img class={carouselStyles.image} src="https://coord-e.com/images/works/scopion.png" />
+          <p>a statically-typed functional programming language with powerful objective syntax</p>
+        </li>
+        <li class={carouselStyles.item}>
+          <h3>scopion</h3>
+          <img class={carouselStyles.image} src="https://coord-e.com/images/works/scopion.png" />
+          <p>a statically-typed functional programming language with powerful objective syntax</p>
+        </li>
+        <li class={carouselStyles.item}>
+          <h3>scopion</h3>
+          <img class={carouselStyles.image} src="https://coord-e.com/images/works/scopion.png" />
+          <p>a statically-typed functional programming language with powerful objective syntax</p>
+        </li>
+      </ul>
     </div>
   </div>
 )

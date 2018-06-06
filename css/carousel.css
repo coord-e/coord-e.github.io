@@ -1,0 +1,15 @@
+.container {
+  overflow-x: scroll;
+  width: 200vw;
+}
+
+.item {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+}
+
+.image {
+  width: 90%;
+}
