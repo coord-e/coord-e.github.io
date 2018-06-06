@@ -12,5 +12,8 @@ module.exports = {
         "jsx": true
       },
       "sourceType": "module"
+    },
+    "rules": {
+      "no-unused-vars": "warn"
     }
 };
