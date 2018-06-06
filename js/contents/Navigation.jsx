@@ -1,11 +1,11 @@
-import cx from "classnames"
+import cx from 'classnames'
 
-import { h, app } from "hyperapp"
-import { Link } from "../scroll"
+import { h, app } from 'hyperapp'
+import { Link } from '../scroll'
 
 const styles = {
-  style: require("css/style.css"),
-  nav:   require("css/navigation.css"),
+  style: require('css/style.css'),
+  nav: require('css/navigation.css')
 }
 
 export const Navigation = ({views, location}) => (
@@ -16,7 +16,7 @@ export const Navigation = ({views, location}) => (
         views.map(view =>
           <li class={styles.nav.item}>
             <Link class={cx(styles.nav.link, {[`${styles.nav.here}`]: location.pathname === view.path})}
-                  to={view.path}>
+              to={view.path}>
               {view.display}
             </Link>
           </li>

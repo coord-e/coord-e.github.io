@@ -1,17 +1,17 @@
-import { h, app } from "hyperapp"
+import { h, app } from 'hyperapp'
 
 const styles = {
-  style:    require("css/style.css"),
-  carousel: require("css/carousel.css"),
+  style: require('css/style.css'),
+  carousel: require('css/carousel.css')
 }
 
 const images = {
- scopion:  require("images/works/scopion.png"),
- validate: require("images/works/validate.now.png"),
- cart:     require("images/works/cart.png"),
- ozone:    require("images/works/ozone.png"),
- ili9328:  require("images/works/ili9328spi.jpg"),
- dsp6951:  require("images/works/dsp6951.jpg")
+  scopion: require('images/works/scopion.png'),
+  validate: require('images/works/validate.now.png'),
+  cart: require('images/works/cart.png'),
+  ozone: require('images/works/ozone.png'),
+  ili9328: require('images/works/ili9328spi.jpg'),
+  dsp6951: require('images/works/dsp6951.jpg')
 }
 
 const WorkItem = ({title, image}, children) => (
@@ -49,4 +49,3 @@ export const Works = () => (
     </div>
   </div>
 )
-

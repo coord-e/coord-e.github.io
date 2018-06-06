@@ -1,42 +1,42 @@
-import cx from "classnames"
+import cx from 'classnames'
 
-import { h, app } from "hyperapp"
-import { Route } from "./scroll"
-import { location } from "@hyperapp/router"
+import { h, app } from 'hyperapp'
+import { Route } from './scroll'
+import { location } from '@hyperapp/router'
 
-import { Navigation, Home, About, Works, Contact } from "./contents"
+import { Navigation, Home, About, Works, Contact } from './contents'
 
 const backgroundImages = [
-  require("images/bg0.jpg"),
-  require("images/bg1.jpg"),
-  require("images/bg2.jpg"),
-  require("images/bg3.jpg"),
-  require("images/bg4.jpg"),
-  require("images/bg5.png")
+  require('images/bg0.jpg'),
+  require('images/bg1.jpg'),
+  require('images/bg2.jpg'),
+  require('images/bg3.jpg'),
+  require('images/bg4.jpg'),
+  require('images/bg5.png')
 ]
 
 const views = [
   {
-    path:"/",
-    display: "coord.e",
+    path: '/',
+    display: 'coord.e',
     view: Home
   },
   {
-    path:"/about",
-    display: "about me",
+    path: '/about',
+    display: 'about me',
     view: About
   },
   {
-    path:"/works",
-    display: "my works",
+    path: '/works',
+    display: 'my works',
     view: Works
   },
   {
-    path:"/contact",
-    display: "contact",
+    path: '/contact',
+    display: 'contact',
     view: Contact
   }
-];
+]
 
 const state = {
   location: location.state
