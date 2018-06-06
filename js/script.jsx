@@ -1,18 +1,10 @@
 import cx from "classnames"
 
 import { h, app } from "hyperapp"
-import { Link, Route } from "./scroll"
+import { Route } from "./scroll"
 import { location } from "@hyperapp/router"
 
-import { Home, About, Works, Contact } from "./contents"
-
-const styles = {
-  style:    require("css/style.css"),
-  nav:      require("css/navigation.css"),
-  top:      require("css/top.css"),
-  carousel: require("css/carousel.css"),
-  form:     require("css/form.css")
-}
+import { Navigation, Home, About, Works, Contact } from "./contents"
 
 const backgroundImages = [
   require("images/bg0.jpg"),
@@ -22,7 +14,6 @@ const backgroundImages = [
   require("images/bg4.jpg"),
   require("images/bg5.png")
 ]
-
 
 const views = [
   {
@@ -60,21 +51,7 @@ document.body.style.backgroundImage = `url(${backgroundImages[Math.floor(Math.ra
 const view = (state, actions) => (
   <div>
     <header>
-      <nav>
-        <ul class={styles.nav.container}>
-          {
-            /* parseRoute() is better to compare pathname and view.path but simple comparison(===) works as well */
-            views.map(view =>
-              <li class={styles.nav.item}>
-                <Link class={cx(styles.nav.link, {[`${styles.nav.here}`]: state.location.pathname === view.path})}
-                      to={view.path}>
-                  {view.display}
-                </Link>
-              </li>
-            )
-          }
-        </ul>
-      </nav>
+      <Navigation views={views} location={state.location} />
     </header>
     <main>
       {
