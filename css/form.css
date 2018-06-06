@@ -1,13 +1,12 @@
 .container {
-  overflow-y: hidden;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .form {
   background-color: #fff;
 
-  width: 70%;
   height: 60vh;
-  margin: 0 auto;
   padding: 30px;
   font-size: 2em;
 
