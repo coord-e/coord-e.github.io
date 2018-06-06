@@ -7,30 +7,21 @@ import { location } from "@hyperapp/router"
 import { Works } from "./contents"
 
 const styles = {
-  style:    require("../css/style.css"),
-  nav:      require("../css/navigation.css"),
-  top:      require("../css/top.css"),
-  carousel: require("../css/carousel.css"),
-  form:     require("../css/form.css")
+  style:    require("css/style.css"),
+  nav:      require("css/navigation.css"),
+  top:      require("css/top.css"),
+  carousel: require("css/carousel.css"),
+  form:     require("css/form.css")
 }
 
 const backgroundImages = [
-  require("../images/bg0.jpg"),
-  require("../images/bg1.jpg"),
-  require("../images/bg2.jpg"),
-  require("../images/bg3.jpg"),
-  require("../images/bg4.jpg"),
-  require("../images/bg5.png")
+  require("images/bg0.jpg"),
+  require("images/bg1.jpg"),
+  require("images/bg2.jpg"),
+  require("images/bg3.jpg"),
+  require("images/bg4.jpg"),
+  require("images/bg5.png")
 ]
-
-const images = {
- scopion:  require("../images/works/scopion.png"),
- validate: require("../images/works/validate.now.png"),
- cart:     require("../images/works/cart.png"),
- ozone:    require("../images/works/ozone.png"),
- ili9328:  require("../images/works/ili9328spi.jpg"),
- dsp6951:  require("../images/works/dsp6951.jpg")
-}
 
 const Home = () => (
   <div class={cx(styles.style.container, styles.top.container)}>
