@@ -159,8 +159,6 @@ const actions = {
 }
 
 document.body.style.backgroundImage = `url(${backgroundImages[Math.floor(Math.random() * backgroundImages.length)]})`
-document.body.style.backgroundSize = 'cover'
-document.body.style.backgroundAttachment = 'fixed'
 
 const view = (state, actions) => (
   <div>
