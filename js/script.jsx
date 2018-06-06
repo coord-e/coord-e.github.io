@@ -72,41 +72,37 @@ const About = () => (
   </div>
 )
 
+const WorkItem = ({title, image}, children) => (
+  <li class={styles.carousel.item}>
+    <h3>{title}</h3>
+    <img class={styles.carousel.image} src={image} />
+    <p>{children}</p>
+  </li>
+)
+
 const Works = () => (
   <div class={styles.style.container}>
     <h2 class={styles.style.heading}>Works</h2>
     <div>
       <ul class={styles.carousel.container}>
-        <li class={styles.carousel.item}>
-          <h3>scopion programming language</h3>
-          <img class={styles.carousel.image} src={images.scopion} />
-          <p>a statically-typed functional programming language with powerful objective syntax</p>
-        </li>
-        <li class={styles.carousel.item}>
-          <h3>cart</h3>
-          <img class={styles.carousel.image} src={images.cart} />
-          <p>Convert c/c++ code into compilable ascii art</p>
-        </li>
-        <li class={styles.carousel.item}>
-          <h3>validate.now</h3>
-          <img class={styles.carousel.image} src={images.validate} />
-          <p>Simple schema validation app built with hyperapp</p>
-        </li>
-        <li class={styles.carousel.item}>
-          <h3>Ozone Project</h3>
-          <img class={styles.carousel.image} src={images.ozone} />
-          <p>Ozone Project brings more OS to Intel Edison. Currently Debian, CentOS, and Fedora are available.</p>
-        </li>
-        <li class={styles.carousel.item}>
-          <h3>DSP6951 Driver Library for Arduino</h3>
-          <img class={styles.carousel.image} src={images.dsp6951} />
-          <p>Arduino Library for DSP6951 DSP Radio IC.</p>
-        </li>
-        <li class={styles.carousel.item}>
-          <h3>ILI9328 Driver Library for Arduino</h3>
-          <img class={styles.carousel.image} src={images.ili9328} />
-          <p>Library for colored graphics LCD with ILI9328 controller.</p>
-        </li>
+        <WorkItem title="scopion programming language" image={images.scopion}>
+          a statically-typed functional programming language with powerful objective syntax
+        </WorkItem>
+        <WorkItem title="cart" image={images.cart}>
+          Convert c/c++ code into compilable ascii art
+        </WorkItem>
+        <WorkItem title="validate.now" image={images.validate}>
+          Simple schema validation app built with hyperapp
+        </WorkItem>
+        <WorkItem title="Ozone Project" image={images.ozone}>
+          Ozone Project brings more OS to Intel Edison. Currently Debian, CentOS, and Fedora are available
+        </WorkItem>
+        <WorkItem title="DSP6951 Driver Library for Arduino" image={images.dsp6951}>
+          Arduino Library for DSP6951 DSP Radio IC.
+        </WorkItem>
+        <WorkItem title="ILI9328 Driver Library for Arduino" image={images.ili9328}>
+          Library for colored graphics LCD with ILI9328 controller.
+        </WorkItem>
       </ul>
     </div>
   </div>
