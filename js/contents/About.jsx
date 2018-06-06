@@ -1,9 +1,9 @@
-import cx from "classnames"
+import cx from 'classnames'
 
-import { h, app } from "hyperapp"
+import { h, app } from 'hyperapp'
 
 const styles = {
-  style:    require("css/style.css"),
+  style: require('css/style.css')
 }
 
 export const About = () => (

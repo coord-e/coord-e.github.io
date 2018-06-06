@@ -1,8 +1,8 @@
-import { h, app } from "hyperapp"
+import { h, app } from 'hyperapp'
 
 const styles = {
-  style: require("css/style.css"),
-  form:  require("css/form.css")
+  style: require('css/style.css'),
+  form: require('css/form.css')
 }
 
 export const Contact = () => (
