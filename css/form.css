@@ -18,6 +18,9 @@
 .email {
   margin: 20px;
   height: 10%;
+
+  font-size: 0.8em;
+  padding: 5px;
 }
 
 .message {
@@ -27,6 +30,9 @@
   height: 70%;
 
   resize: none;
+
+  font-size: 0.8em;
+  padding: 5px;
 }
 
 .submit {
