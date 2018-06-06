@@ -26,7 +26,8 @@
   "scripts": {
     "build": "parcel build index.html",
     "start": "parcel index.html --no-hmr",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint":  "eslint .",
+    "fix":   "yarn run lint --fix"
   },
   "repository": {
     "type": "git",
