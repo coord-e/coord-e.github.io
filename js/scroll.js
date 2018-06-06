@@ -94,7 +94,6 @@ export function Route(props){
     if(window.pageYOffset + window.innerHeight >= e.offsetTop &&
        window.pageYOffset + window.innerHeight <= e.offsetTop + e.offsetHeight){
       if(!clicked && location.pathname !== props.path){
-        console.log("rep")
         history.replaceState(location.pathname, "", props.path)
       }
     }
