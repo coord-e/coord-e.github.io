@@ -24,15 +24,13 @@ export const Icon = (props) => {
     path = iconPath
   } = props
 
-  const className = props.class
-
   return <svg
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     role="img"
     data-icon={ name }
     data-prefix={ prefix }
-    class={cx(styles.style.icon, className)}
+    class={styles.style.icon}
     viewBox={ viewBox }
   >
     <path fill="currentColor" d={path}></path>
@@ -40,7 +38,8 @@ export const Icon = (props) => {
 }
 
 export const IconLink = (props) => (
-  <a href={props.href} target={props.target}>
+  <a href={props.href} target={props.target} class={cx(styles.style.iconcontainer, props.class)}>
     <Icon {...props} />
+    {props.showUrl ? <span class={styles.style.iconlink}>{props.href}</span> : null}
   </a>
 )

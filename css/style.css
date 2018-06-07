@@ -69,3 +69,8 @@ a {
 .icon {
   width: 50px;
 }
+
+.iconcontainer {
+  display: flex;
+  margin: 0 10px;
+}
