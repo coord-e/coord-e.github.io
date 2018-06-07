@@ -18,6 +18,11 @@ h3:before {
   color: #b2bec3;
 }
 
+a {
+  text-decoration: none;
+  transition: .2s;
+}
+
 .container {
   height: 100vh;
 }
@@ -59,4 +64,13 @@ h3:before {
 
 .tag:hover {
   background-color: #2d3436;
+}
+
+.icon {
+  width: 50px;
+}
+
+.iconcontainer {
+  display: flex;
+  margin: 0 10px;
 }
