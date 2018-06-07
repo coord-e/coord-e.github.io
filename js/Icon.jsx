@@ -39,13 +39,13 @@ export const Icon = (props) => {
   </svg>
 }
 
-export const IconLink = (props) => {
+export const IconLink = (props, children) => {
   const className = props.class
   delete props.class
   return (
     <a href={props.href} target={props.target} class={cx(styles.style.iconcontainer, className)}>
       <Icon {...props} />
-      {props.showUrl ? <span class={styles.style.iconlink}>{props.href}</span> : null}
+      {children}
     </a>
   )
 }
