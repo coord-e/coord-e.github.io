@@ -26,4 +26,10 @@
 .icon {
   margin: 10px;
   height: 2em;
+
+  color: #fff;
+}
+
+.icon:hover {
+  color: #dfe6e9;
 }
