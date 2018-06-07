@@ -24,22 +24,28 @@ export const Icon = (props) => {
     path = iconPath
   } = props
 
+  const className = props.class
+
   return <svg
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     role="img"
     data-icon={ name }
     data-prefix={ prefix }
-    class={styles.style.icon}
+    class={cx(styles.style.icon, className)}
     viewBox={ viewBox }
   >
     <path fill="currentColor" d={path}></path>
   </svg>
 }
 
-export const IconLink = (props) => (
-  <a href={props.href} target={props.target} class={cx(styles.style.iconcontainer, props.class)}>
-    <Icon {...props} />
-    {props.showUrl ? <span class={styles.style.iconlink}>{props.href}</span> : null}
-  </a>
-)
+export const IconLink = (props) => {
+  const className = props.class
+  delete props.class
+  return (
+    <a href={props.href} target={props.target} class={cx(styles.style.iconcontainer, className)}>
+      <Icon {...props} />
+      {props.showUrl ? <span class={styles.style.iconlink}>{props.href}</span> : null}
+    </a>
+  )
+}
