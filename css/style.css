@@ -60,3 +60,14 @@ h3:before {
 .tag:hover {
   background-color: #2d3436;
 }
+
+.icon {
+  width: 50px;
+  color: #fff;
+
+  transition: .3s;
+}
+
+.icon:hover {
+  color: #dfe6e9;
+}
