@@ -1,9 +1,9 @@
-import cx from "classnames"
+import cx from 'classnames'
 
 import { h } from 'hyperapp'
 
 const styles = {
-  style: require("css/style.css")
+  style: require('css/style.css')
 }
 
 export const Icon = (props) => {
