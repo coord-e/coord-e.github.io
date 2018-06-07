@@ -25,12 +25,12 @@ export const Contact = () => (
         <label for="message" class={styles.form.label}>Message</label>
         <textarea name="message" class={styles.form.message} required></textarea>
         <div
-          class={cx(styles.form.submit, "g-recaptcha")}
+          class="g-recaptcha"
           data-sitekey="6LcFcEgUAAAAANjJW3BemaRnHeNDXQy6Pvz8ETgL"
           data-callback="onSubmit"
           data-size="invisible">
         </div>
-        <button onclick={validate}>
+        <button class={styles.form.submit} onclick={validate}>
           送信する
         </button>
       </form>
