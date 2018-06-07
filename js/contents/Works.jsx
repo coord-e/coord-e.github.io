@@ -21,7 +21,9 @@ const images = {
 const WorkItem = ({title, image}, children) => (
   <li class={styles.carousel.item}>
     <h3>{title}</h3>
-    <img class={styles.carousel.image} src={image} />
+    <div class={styles.carousel.imagecontainer}>
+      <img class={styles.carousel.image} src={image} />
+    </div>
     <p>{children}</p>
   </li>
 )
