@@ -23,8 +23,13 @@ a {
   transition: .2s;
 }
 
+:global .grecaptcha-badge {
+  position: absolute !important;
+}
+
 .container {
   height: 100vh;
+  position: relative;
 }
 
 .heading {
