@@ -1,5 +1,9 @@
 import { h, app } from 'hyperapp'
 
+import { IconLink, Icon } from '../Icon'
+import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
+import faLink from '@fortawesome/fontawesome-free-solid/faLink'
+
 const styles = {
   style: require('css/style.css'),
   carousel: require('css/carousel.css')
@@ -29,6 +33,10 @@ export const Works = () => (
       <ul class={styles.carousel.container}>
         <WorkItem title="scopion programming language" image={images.scopion}>
           a statically-typed functional programming language with powerful objective syntax
+          <div class={styles.carousel.icons}>
+            <IconLink src={faLink} href="https://scopion.coord-e.com/" target="_blank" showUrl="true" class={styles.carousel.icon} />
+            <IconLink src={faGithub} href="https://github.com/coord-e/scopion" target="_blank" class={styles.carousel.icon} />
+          </div>
         </WorkItem>
         <WorkItem title="cart" image={images.cart}>
           Convert c/c++ code into compilable ascii art
