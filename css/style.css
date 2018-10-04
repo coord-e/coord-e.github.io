@@ -48,6 +48,11 @@ a {
   position: relative;
 }
 
+.content p {
+  display: inline;
+  background-color: #fff;
+}
+
 @media (--normal) {
   .content:before {
     content: "";
