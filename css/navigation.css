@@ -1,4 +1,6 @@
-.container{
+@import "./media.css"
+
+.container {
   display: flex;
   justify-content: flex-end;
 

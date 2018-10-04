@@ -1,3 +1,5 @@
+@import "./media.css"
+
 .container {
   overflow-x: scroll;
   width: 95vw;
