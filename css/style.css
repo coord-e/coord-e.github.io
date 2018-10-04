@@ -30,6 +30,10 @@ a {
 }
 
 .wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -10;
+  position: relative;
+
   overflow: hidden;
 }
 
