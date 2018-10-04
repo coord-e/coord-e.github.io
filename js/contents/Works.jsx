@@ -10,6 +10,7 @@ const styles = {
 }
 
 const images = {
+  peripherio: require('images/works/peripherio.png'),
   scopion: require('images/works/scopion.png'),
   validate: require('images/works/validate.now.png'),
   cart: require('images/works/cart.png'),
@@ -33,6 +34,14 @@ export const Works = () => (
     <h2 class={styles.style.heading}>Works</h2>
     <div>
       <ul class={styles.carousel.container}>
+        <WorkItem title="peripherio" image={images.peripherio}>
+          The peripheral interface abstraction software
+          <div class={styles.carousel.links}>
+            <IconLink src={faGithub} href="https://github.com/peripherio/peripherio" target="_blank" class={styles.carousel.link}>
+              GitHub
+            </IconLink>
+          </div>
+        </WorkItem>
         <WorkItem title="scopion programming language" image={images.scopion}>
           a statically-typed functional programming language with powerful objective syntax
           <div class={styles.carousel.links}>
