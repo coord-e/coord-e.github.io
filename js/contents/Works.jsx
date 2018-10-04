@@ -11,6 +11,7 @@ const styles = {
 
 const images = {
   peripherio: require('images/works/peripherio.png'),
+  bd: require('images/works/bd.png'),
   scopion: require('images/works/scopion.png'),
   validate: require('images/works/validate.now.png'),
   cart: require('images/works/cart.png'),
@@ -38,6 +39,14 @@ export const Works = () => (
           The peripheral interface abstraction software
           <div class={styles.carousel.links}>
             <IconLink src={faGithub} href="https://github.com/peripherio/peripherio" target="_blank" class={styles.carousel.link}>
+              GitHub
+            </IconLink>
+          </div>
+        </WorkItem>
+        <WorkItem title="bd" image={images.bd}>
+          Bash Framework to write CLI script easily
+          <div class={styles.carousel.links}>
+            <IconLink src={faGithub} href="https://github.com/coord-e/bd" target="_blank" class={styles.carousel.link}>
               GitHub
             </IconLink>
           </div>
