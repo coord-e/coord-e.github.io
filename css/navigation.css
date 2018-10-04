@@ -14,12 +14,22 @@
   z-index: 10;
 }
 
-.item {
-  flex-grow: 1;
+@media (--mobile) {
+  .container {
+    width: 100%;
+  }
+}
 
+.item {
   list-style-type: none;
 
   margin: 10px;
+}
+
+@media (--mobile) {
+  .item {
+    flex-grow: 1;
+  }
 }
 
 .link {
@@ -30,6 +40,13 @@
 
   position: relative;
 }
+
+@media (--mobile) {
+  .link {
+    font-size: 5vw;
+  }
+}
+
 
 .link::after{
   position: absolute;
