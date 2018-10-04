@@ -3,6 +3,8 @@
   "plugins": {
     "postcss-custom-media": {
       "importFrom": "css/media.css"
+    },
+    "postcss-preset-env": {}
     }
   }
 }
