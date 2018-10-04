@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+@media (--mobile) {
+  .container {
+    width: 90%;
+  }
+}
+
 .form {
   background-color: #fff;
 
