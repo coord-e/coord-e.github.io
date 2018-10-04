@@ -24,6 +24,7 @@
     "postcss": "^6.0.16",
     "postcss-import": "^12.0.0",
     "postcss-modules": "^1.1.0",
+    "postcss-parcel-import": "^0.0.2",
     "postcss-preset-env": "^6.0.10"
   },
   "name": "portfolio",

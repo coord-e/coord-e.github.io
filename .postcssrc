@@ -2,6 +2,9 @@
   "modules": true,
   "plugins": {
     "postcss-import": {},
-    "postcss-preset-env": {}
+    "postcss-parcel-import": {},
+    "postcss-preset-env": {
+      "stage": 1
+    }
   }
 }

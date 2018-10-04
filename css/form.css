@@ -1,4 +1,4 @@
-@import "./media.css";
+@parcel-import "./media.css";
 
 .container {
   width: 70%;
