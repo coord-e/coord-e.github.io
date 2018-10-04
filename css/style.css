@@ -53,6 +53,14 @@ a {
   background-color: #fff;
 }
 
+
+@media (--tablet) {
+  .content {
+    background-color: #fff;
+    padding: 20px;
+  }
+}
+
 @media (--normal) {
   .content:before {
     content: "";
