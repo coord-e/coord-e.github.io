@@ -57,8 +57,12 @@
   -webkit-appearance: none;
 
   margin: 20px auto;
-  height: 10%;
+  height: 20%;
   width: 60%;
 
   font-size: 0.6em;
+
+  border-style: solid;
+  border-color: #b2bec3;
+  background-color: #fff;
 }
