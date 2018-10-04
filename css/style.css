@@ -4,6 +4,8 @@ body {
   margin: 0;
   background-size: cover;
   background-attachment: fixed;
+
+  pointer-events: none;
 }
 
 body, input, textarea {
@@ -33,6 +35,8 @@ a {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -10;
   position: relative;
+
+  pointer-events: auto;
 
   overflow: hidden;
 }
