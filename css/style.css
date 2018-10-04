@@ -29,6 +29,10 @@ a {
   position: absolute !important;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .container {
   height: 100vh;
   position: relative;

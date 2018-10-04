@@ -6,6 +6,8 @@ import { location } from '@hyperapp/router'
 
 import { Navigation, Home, About, Works, Contact } from './contents'
 
+const style = require('css/style.css');
+
 const backgroundImages = [
   require('images/bg0.jpg'),
   require('images/bg1.jpg'),
@@ -50,7 +52,7 @@ const actions = {
 document.body.style.backgroundImage = `url(${backgroundImages[Math.floor(Math.random() * backgroundImages.length)]})`
 
 const view = (state, actions) => (
-  <div>
+  <div class={style.wrapper}>
     <header>
       <Navigation views={views} location={state.location} />
     </header>
