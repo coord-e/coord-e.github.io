@@ -24,13 +24,8 @@ export const Contact = () => (
         <input type="email" name="email" class={styles.form.email} required />
         <label for="message" class={styles.form.label}>Message</label>
         <textarea name="message" class={styles.form.message} required></textarea>
-        <div
-          class="g-recaptcha"
-          data-sitekey="6LcFcEgUAAAAANjJW3BemaRnHeNDXQy6Pvz8ETgL"
-          data-callback="onSubmit"
-          data-size="invisible">
-        </div>
-        <button class={styles.form.submit} onclick={validate}>
+        <input type="hidden" name="g-recaptcha-response" id="js-token" required />
+        <button class={styles.form.submit}>
           送信する
         </button>
       </form>
