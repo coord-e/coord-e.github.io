@@ -5,6 +5,5 @@
       "importFrom": "css/media.css"
     },
     "postcss-preset-env": {}
-    }
   }
 }
