@@ -12,7 +12,8 @@ const backgroundImages = [
   require('images/bg2.jpg'),
   require('images/bg3.jpg'),
   require('images/bg4.jpg'),
-  require('images/bg5.png')
+  require('images/bg5.png'),
+  require('images/bg6.jpg')
 ]
 
 const views = [
