@@ -10,6 +10,16 @@
   font-weight: 400;
 }
 
+@media (--mobile) {
+  .heading {
+    font-size: 12vw;
+  }
+
+  .description {
+    font-size: 7vw;
+  }
+}
+
 .description {
   color: #fff;
   font-size: 1.5rem;
