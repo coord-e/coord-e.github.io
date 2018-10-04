@@ -1,3 +1,8 @@
 {
-  "modules": true
+  "modules": true,
+  "plugins": {
+    "postcss-custom-media": {
+      "importFrom": "css/media.css"
+    }
+  }
 }
