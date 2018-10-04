@@ -10,19 +10,16 @@ export const About = () => (
   <div class={styles.style.container}>
     <h2 class={styles.style.heading}>About</h2>
     <div class={styles.style.content}>
-      <h3>C++とWebの高校生エンジニアです</h3>
+      <h3>Rust, PythonとWebを書く高校生です</h3>
       <p>
-        小学校の頃に電子工作に夢中になり、自由な動作を求めてPICマイコンのアセンブリを書き始めました。<br/>
-        その後アセンブリ→C→C++と興味が移り、今はC++の最新規格を追うぐらいにはC++が好きになりました。<br/>
-        今ではPythonにも手を出しています。
+        Rustで言語処理系を自作したり、シェルスクリプト(Bash)で小さなツールを書いたりするのが趣味です。<br/>
       </p>
       <p>
-        Webはフロントエンドが主です。(React/Hyperapp/ES6/HTML5)<br/>
-        Nodejsでバックエンドを書いたりもします。
+        フロントエンド・バックエンド共にWebサイトの開発経験があります。フロントエンドの方が好きです。<br/>
       </p>
       <p>
         また、ものづくりを楽しむ学生達のコミュニティ、Y-modifyの創設メンバーとして<br/>
-        ヒューマノイドロボット"YamaX"の基板とソフトウェアを制作しています。
+        ヒューマノイドロボット"YamaX"の基板と、強化学習を使用した制御ソフトウェアを制作しています。<br/>
       </p>
       <h3>言語</h3>
       <span class={styles.style.tag}>C++</span>
