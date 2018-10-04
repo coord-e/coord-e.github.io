@@ -21,19 +21,18 @@ export const About = () => (
         また、ものづくりを楽しむ学生達のコミュニティ、Y-modifyの創設メンバーとして<br/>
         ヒューマノイドロボット"YamaX"の基板と、強化学習を使用した制御ソフトウェアを制作しています。<br/>
       </p>
-      <h3>言語</h3>
+      <h3>スキルセット</h3>
+      <span class={styles.style.tag}>Rust</span>
       <span class={styles.style.tag}>C++</span>
       <span class={styles.style.tag}>Python</span>
       <span class={styles.style.tag}>HTML5/CSS3/ES6</span>
       <span class={styles.style.tag}>Bash</span>
-      <span class={styles.style.tag}>C</span>
-      <span class={styles.style.tag}>Go</span>
-      <h3>興味</h3>
-      <span class={styles.style.tag}>低レイヤ技術</span>
-      <span class={styles.style.tag}>Linuxカーネル</span>
-      <span class={styles.style.tag}>Haskell</span>
-      <span class={styles.style.tag}>インフラ技術</span>
-      <span class={styles.style.tag}>機械学習</span>
+      <h3>好きな技術</h3>
+      <span class={styles.style.tag}>Infrastructure as Code</span>
+      <span class={styles.style.tag}>Docker</span>
+      <span class={styles.style.tag}>抽象化</span>
+      <span class={styles.style.tag}>強化学習</span>
+      <span class={styles.style.tag}>低レイヤ</span>
     </div>
   </div>
 )
