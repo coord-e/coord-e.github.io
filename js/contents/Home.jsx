@@ -20,7 +20,7 @@ export const Home = () => (
     <div class={styles.top.icons}>
       <IconLink src={faGithub} href="https://github.com/coord-e" target="_blank" class={styles.top.icon} />
       <IconLink src={faTwitter} href="https://twitter.com/coord_e" target="_blank" class={styles.top.icon} />
-      <IconLink src={faRss} href="https://qiita.com/coord_e" target="_blank" class={styles.top.icon} />
+      <IconLink src={faRss} href="https://qiita.com/coord-e" target="_blank" class={styles.top.icon} />
       <IconLink src={faEnvelope} href="mailto:me@coord-e.com" target="_blank" class={styles.top.icon} />
     </div>
   </div>
