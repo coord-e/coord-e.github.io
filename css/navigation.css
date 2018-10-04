@@ -15,6 +15,8 @@
 }
 
 .item {
+  flex-grow: 1;
+
   list-style-type: none;
 
   margin: 10px;
